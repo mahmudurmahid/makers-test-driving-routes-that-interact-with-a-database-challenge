@@ -14,6 +14,10 @@ POST /albums
   
   Expected response (200 OK)
   (No content)
+
+GET /albums
+  Expected response (200 OK)
+
 ```
 
 ## 2. Create Examples as Tests
@@ -25,14 +29,25 @@ _Remember to try out different parameter values._
 _Include the status code and the response body._
 
 ```python
-# POST /albums
-# Parameters:
-#   title=Voyage
-#   release_year=2022
-#   artist_id=2
-# Expected response (200 OK):
-"""
-(No content)
+# Scenario 1
+    # POST /albums
+    # Parameters:
+    #   title=Voyage
+    #   release_year=2022
+    #   artist_id=2
+    # Expected response (200 OK):
+    """
+    (No content)
+    """
+
+    # GET /albums
+    # Expected response (200 OK)
+    """
+    Album(1, 'Neon Skies', 2020, 1)
+    Album(2, 'Broken Satellites', 2016, 2)
+    Album(3, 'Midnight Echoes', 2018, 3)
+    Album(4, 'Golden Static', 2022, 4)
+    Album(5, 'Voyage', 2022, 2)
 """
 ```
 
