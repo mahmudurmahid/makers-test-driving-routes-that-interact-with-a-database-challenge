@@ -48,7 +48,7 @@ Remember to **always** have the primary key `id` as a first column. Its type wil
 id: SERIAL
 title: text
 release_year: int
-artist_id: 
+artist_id: int
 ```
 
 ## 4. Write the SQL
