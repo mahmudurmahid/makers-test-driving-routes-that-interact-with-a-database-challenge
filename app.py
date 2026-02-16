@@ -9,6 +9,9 @@ app = Flask(__name__)
 def post_album():
     return ""
 
+@app.route('/albums', methods=['GET'])
+def get_albums():
+    return 
 
 # These lines start the server if you run this file directly
 # They also start the server configured to use the test database
