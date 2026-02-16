@@ -6,7 +6,7 @@ _Copy this design recipe template to test-drive a plain-text Flask route._
 ## 1. Design the Route Signature
 
 _Include the HTTP method, the path, and any query or body parameters._
-
+```
 POST /albums
   title: string
   release_year: number (str)
