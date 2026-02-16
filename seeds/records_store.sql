@@ -17,7 +17,7 @@ CREATE TABLE albums (
 );
 
 -- Finally, we add any records that are needed for the tests to run
-INSERT INTO albums (title, release_year, artist_id) VALUES ('Neon Skies', 2020, 1)
-INSERT INTO albums (title, release_year, artist_id) VALUES ('Broken Satellites', 2016, 2)
-INSERT INTO albums (title, release_year, artist_id) VALUES ('Midnight Echoes', 2018, 3)
-INSERT INTO albums (title, release_year, artist_id) VALUES ('Golden Static', 2022, 4)
+INSERT INTO albums (title, release_year, artist_id) VALUES ('Neon Skies', 2020, 1);
+INSERT INTO albums (title, release_year, artist_id) VALUES ('Broken Satellites', 2016, 2);
+INSERT INTO albums (title, release_year, artist_id) VALUES ('Midnight Echoes', 2018, 3);
+INSERT INTO albums (title, release_year, artist_id) VALUES ('Golden Static', 2022, 4);
