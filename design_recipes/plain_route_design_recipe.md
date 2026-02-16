@@ -27,40 +27,14 @@ _Remember to try out different parameter values._
 _Include the status code and the response body._
 
 ```python
-# EXAMPLE
-
-# GET /home
-#  Expected response (200 OK):
+# POST /albums
+# Parameters:
+#   title=Voyage
+#   release_year=2022
+#   artist_id=2
+# Expected response (200 OK):
 """
-This is my home page!
-"""
-
-# GET /wave?name=Leo
-#  Expected response (200 OK):
-"""
-I am waving at Leo
-"""
-
-# GET /wave
-#  Expected response (200 OK):
-"""
-I am waving at no one!
-"""
-
-# POST /submit
-#  Parameters:
-#    name: Leo
-#    message: Hello world
-#  Expected response (200 OK):
-"""
-Thanks Leo, you sent this message: "Hello world"
-"""
-
-# POST /submit
-#  Parameters: none
-#  Expected response (400 Bad Request):
-"""
-Please provide a name and a message
+(No content)
 """
 ```
 
