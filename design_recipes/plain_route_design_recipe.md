@@ -1,5 +1,5 @@
 
-# {{ NAME }} Route Design Recipe
+# POST Album Route Design Recipe
 
 _Copy this design recipe template to test-drive a plain-text Flask route._
 
