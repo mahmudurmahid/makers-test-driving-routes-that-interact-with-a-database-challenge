@@ -72,16 +72,6 @@ _After each test you write, follow the test-driving process of red, green, refac
 Here's an example for you to start with:
 
 ```python
-"""""
-GET /home
-  Expected response (200 OK):
-  "This is my home page!"
-"""
-def test_get_home(web_client):
-    response = web_client.get('/home')
-    assert response.status_code == 200
-    assert response.data.decode('utf-8') == 'This is my home page!'""
-
 """
 POST /albums
   Parametes:
