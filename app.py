@@ -10,7 +10,7 @@ app = Flask(__name__)
 # == Your Routes Here ==
 @app.route('/albums', methods=['POST'])
 def post_albums():
-    if "title" not in request.form or "release_year" not in request.form or "artist_id" not in request.form:
+    if has_invalid_album_parameters(request.form):
         return "You need to submit a title, release_year, and artist_id", 400
     
     connection = get_flask_database_connection(app)
@@ -31,6 +31,10 @@ def get_albums():
     repository = AlbumRepository(connection)
 
     return "".join(f"{album}" for album in repository.all())
+
+def has_invalid_album_parameters(form):
+    return "title" not in form or "release_year" not in form or "artist_id" not in form
+
 
 # These lines start the server if you run this file directly
 # They also start the server configured to use the test database
