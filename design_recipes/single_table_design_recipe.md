@@ -19,20 +19,20 @@ artist_id=2
 ```
 Nouns:
 
-album, title, release year
+album, title, release year, artist, id
 ```
 
 ## 2. Infer the Table Name and Columns
 
 Put the different nouns in this table. Replace the example with your own nouns.
 
-| Record                | Properties          |
-| --------------------- | ------------------- |
-| album                 | title, release year |
+| Record                | Properties                         |
+| --------------------- | -----------------------------------|
+| album                 | id, title, release year, artist_id |
 
 Name of the table (always plural): `albums`
 
-Column names: `title`, `release_year`
+Column names: `title`, `release_year`, `artist_id`, `id`
 
 ## 3. Decide the column types
 
@@ -48,6 +48,7 @@ Remember to **always** have the primary key `id` as a first column. Its type wil
 id: SERIAL
 title: text
 release_year: int
+artist_id: 
 ```
 
 ## 4. Write the SQL
