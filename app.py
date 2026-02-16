@@ -10,7 +10,17 @@ app = Flask(__name__)
 # == Your Routes Here ==
 @app.route('/albums', methods=['POST'])
 def post_album():
-    return ""
+    connection = get_flask_database_connection(app)
+    repository = AlbumRepository(connection)
+
+    album = Album(None, 
+                  request.form['title'],
+                  request.form['release_year'],
+                  request.form['artist_id']
+                  )
+    repository.create_album(album)
+    
+    return "", 200
 
 @app.route('/albums', methods=['GET'])
 def get_albums():
