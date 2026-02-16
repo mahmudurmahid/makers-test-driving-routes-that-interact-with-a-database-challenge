@@ -10,6 +10,9 @@ app = Flask(__name__)
 # == Your Routes Here ==
 @app.route('/albums', methods=['POST'])
 def post_albums():
+    if "title" not in request.form or "release_year" not in request.form or "artist_id" not in request.form:
+        return "You need to submit a title, release_year, and artist_id", 400
+    
     connection = get_flask_database_connection(app)
     repository = AlbumRepository(connection)
 
