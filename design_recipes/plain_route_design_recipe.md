@@ -45,7 +45,7 @@ _After each test you write, follow the test-driving process of red, green, refac
 Here's an example for you to start with:
 
 ```python
-"""
+"""""
 GET /home
   Expected response (200 OK):
   "This is my home page!"
@@ -53,18 +53,18 @@ GET /home
 def test_get_home(web_client):
     response = web_client.get('/home')
     assert response.status_code == 200
-    assert response.data.decode('utf-8') == 'This is my home page!'
+    assert response.data.decode('utf-8') == 'This is my home page!'""
 
 """
-POST /submit
-  Parameters:
-    name: Leo
-    message: Hello world
-  Expected response (200 OK):
-  "Thanks Leo, you sent this message: "Hello world""
+POST /albums
+  Parametes:
+    title=Voyage
+    release_year=2022
+    artist_id=2
+  Expected response:
+    (No content)
 """
-def test_post_submit(web_client):
-    response = web_client.post('/submit', data={'name': 'Leo', 'message': 'Hello world'})
-    assert response.status_code == 200
-    assert response.data.decode('utf-8') == 'Thanks Leo, you sent this message: "Hello world"'
+def test_albums(web_client):
+    response = web.client.post('/albums', data={'title': 'Voyage' 'release_year': 2022 'artist_id': 2})
+    assert response.status_code = =200
 ```

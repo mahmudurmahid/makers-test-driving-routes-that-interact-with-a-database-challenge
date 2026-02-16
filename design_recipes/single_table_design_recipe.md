@@ -3,16 +3,17 @@ _Copy this recipe template to design and create a database table from a specific
 ## 1. Extract nouns from the user stories or specification
 
 ```
-# EXAMPLE USER STORY:
-# (analyse only the relevant part - here, the final line).
+# Request:
+POST /albums
 
-As a music lover,
-So I can organise my records,
-I want to keep a list of albums' titles.
+# With body parameters:
+title=Voyage
+release_year=2022
+artist_id=2
 
-As a music lover,
-So I can organise my records,
-I want to keep a list of albums' release years.
+# Expected response (200 OK)
+(No content)
+
 ```
 
 ```
