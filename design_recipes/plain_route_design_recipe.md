@@ -17,7 +17,6 @@ POST /albums
 
 GET /albums
   Expected response (200 OK)
-
 ```
 
 ## 2. Create Examples as Tests
@@ -37,7 +36,6 @@ _Include the status code and the response body._
     #   artist_id=2
     # Expected response (200 OK):
     """
-    (No content)
     """
 
     # GET /albums
@@ -48,7 +46,7 @@ _Include the status code and the response body._
     Album(3, 'Midnight Echoes', 2018, 3)
     Album(4, 'Golden Static', 2022, 4)
     Album(5, 'Voyage', 2022, 2)
-"""
+    """
 ```
 
 ## 3. Test-drive the Route
