@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # == Your Routes Here ==
 @app.route('/albums', methods=['POST'])
-def post_album():
+def post_albums():
     connection = get_flask_database_connection(app)
     repository = AlbumRepository(connection)
 
