@@ -6,13 +6,11 @@ _Copy this design recipe template to test-drive a plain-text Flask route._
 ## 1. Design the Route Signature
 
 _Include the HTTP method, the path, and any query or body parameters._
-# Request
-POST / albums
 
-# With body parameters
-title=Voyage
-release_year=2022
-artist_id=2
+POST / albums
+  title: string
+  release_year: number (str)
+  artist_id: number (str)
 
 # Expected response (200 OK)
 (No content)
