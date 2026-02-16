@@ -6,20 +6,16 @@ _Copy this design recipe template to test-drive a plain-text Flask route._
 ## 1. Design the Route Signature
 
 _Include the HTTP method, the path, and any query or body parameters._
+# Request
+POST / albums
 
-```
-# EXAMPLE
+# With body parameters
+title=Voyage
+release_year=2022
+artist_id=2
 
-# Home route
-GET /home
-
-# Waving route
-GET /wave?name=
-
-# Submit message route
-POST /submit
-  name: string
-  message: string
+# Expected response (200 OK)
+(No content)
 ```
 
 ## 2. Create Examples as Tests
