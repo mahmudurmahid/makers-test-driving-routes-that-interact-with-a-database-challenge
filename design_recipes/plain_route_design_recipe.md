@@ -11,9 +11,9 @@ POST / albums
   title: string
   release_year: number (str)
   artist_id: number (str)
-
-# Expected response (200 OK)
-(No content)
+  
+  Expected response (200 OK)
+  (No content)
 ```
 
 ## 2. Create Examples as Tests
